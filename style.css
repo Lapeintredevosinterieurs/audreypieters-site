@@ -530,3 +530,106 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Page Prestations */
+.services-list {
+  display: grid;
+  gap: 28px;
+}
+
+.service-section {
+  background: rgba(255, 253, 248, 0.74);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: clamp(26px, 5vw, 48px);
+}
+
+.service-section h2 {
+  margin-bottom: 8px;
+}
+
+.service-subtitle {
+  color: var(--blue-dark);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.7rem;
+  margin: 0 0 20px;
+}
+
+.service-section p:last-child {
+  margin-bottom: 0;
+}
+
+/* Page Réalisations */
+.portfolio-intro {
+  max-width: 840px;
+}
+
+.portfolio-section {
+  padding-top: 84px;
+}
+
+.portfolio-section + .portfolio-section {
+  border-top: 1px solid var(--line);
+}
+
+.portfolio-section .section-heading {
+  max-width: 860px;
+}
+
+.portfolio-subheading {
+  margin: 52px 0 24px;
+  font-size: 2.3rem;
+}
+
+.gallery.portfolio-gallery {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gallery.portfolio-gallery figure {
+  box-shadow: 0 10px 30px rgba(40, 38, 33, 0.06);
+}
+
+.gallery.portfolio-gallery img {
+  aspect-ratio: 4 / 3;
+}
+
+.before-after {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.before-after figure {
+  margin: 0;
+}
+
+.before-after figcaption {
+  padding: 10px 0 0;
+  font-weight: 600;
+}
+
+.project-pair {
+  margin-top: 28px;
+  padding: 24px;
+  background: rgba(255, 253, 248, 0.62);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.project-pair h3 {
+  margin-bottom: 18px;
+}
+
+@media (max-width: 900px) {
+  .gallery.portfolio-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery.portfolio-gallery,
+  .before-after {
+    grid-template-columns: 1fr;
+  }
+}

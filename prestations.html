@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Peinture intérieure, revêtements muraux, peintures décoratives, commerces et décors événementiels par Audrey Pieters.">
+  <title>Prestations | Audrey Pieters</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Accueil Audrey Pieters">
+      <img src="assets/logo.png" alt="Logo Audrey Pieters">
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="prestations.html">Prestations</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="faq.html">FAQ</a>
+      <a class="nav-cta" href="contact.html">Demander un devis</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="kicker">Savoir-faire</p>
+        <h1>Prestations</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container services-list">
+        <article class="service-section">
+          <h2>Peinture intérieure</h2>
+          <p class="service-subtitle">Un service expert</p>
+          <p>Que ce soit dans le cadre d'une rénovation complète, d'un simple rafraîchissement ou à la suite d'un dégât des eaux, je vous accompagne dans tous vos travaux de peinture intérieure.</p>
+          <p>Chaque chantier débute par une préparation soignée des supports : traitement des fissures, reprises d'enduits, réparations localisées et mise en état des surfaces selon les besoins.</p>
+          <p>J'interviens ensuite sur les murs et plafonds avec le même souci du détail afin de garantir un résultat durable et esthétique.</p>
+          <p>Je vous conseille également dans le choix des couleurs et des finitions afin de créer un intérieur qui vous ressemble.</p>
+        </article>
+
+        <article class="service-section">
+          <h2>Pose de revêtements muraux</h2>
+          <p>Papier peint, panoramique, toile à peindre ou revêtement décoratif : les murs constituent un élément essentiel de l'identité d'un intérieur.</p>
+          <p>Je réalise la pose de différents revêtements muraux avec le même niveau d'exigence que pour les travaux de peinture.</p>
+        </article>
+
+        <article class="service-section">
+          <h2>Peinture décorative et matières</h2>
+          <p class="service-subtitle">Centré sur votre projet</p>
+          <p>Parce qu'un intérieur ne se résume pas à une simple couleur, certaines techniques permettent d'apporter relief, profondeur et personnalité à un espace.</p>
+          <p>Patines, peintures à la chaux, enduits décoratifs, bétons cirés, effets de matière ou imitations permettent de créer des ambiances uniques adaptées à vos envies et à votre intérieur.</p>
+          <p>Chaque projet fait l'objet d'un échange préalable afin de définir la solution la plus adaptée au rendu recherché.</p>
+        </article>
+
+        <article class="service-section">
+          <h2>Commerces, restaurants et espaces professionnels</h2>
+          <p class="service-subtitle">Mettre en valeur votre activité</p>
+          <p>L'image d'un commerce ou d'un espace professionnel participe pleinement à l'expérience de vos clients.</p>
+          <p>Je vous accompagne dans la mise en valeur de vos locaux afin de créer un environnement cohérent avec votre identité visuelle et votre activité.</p>
+          <p>J'interviens aussi bien sur les espaces intérieurs que sur certains éléments extérieurs tels que les devantures, afin de contribuer à l'attractivité et à la personnalité de votre établissement.</p>
+        </article>
+
+        <article class="service-section">
+          <h2>Spectacle, mode et événementiel</h2>
+          <p class="service-subtitle">L'art de créer des décors</p>
+          <p>Parce que j'aime explorer différentes facettes de mon métier, je participe ponctuellement à des projets liés au spectacle, à la mode, à l'événementiel et au cinéma.</p>
+          <p>Je collabore à la réalisation de décors, d'éléments scénographiques et d'ambiances visuelles destinés à mettre en valeur une création, une marque ou un événement.</p>
+          <p>Ces projets sont pour moi l'occasion de conjuguer savoir-faire technique, créativité et travail d'équipe.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-cta">
+      <div class="container compact">
+        <p class="kicker">Votre projet</p>
+        <h2>Échangeons sur vos besoins</h2>
+        <a class="button" href="contact.html">Demander un devis</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="https://www.instagram.com/audreypieterspeintre?utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.facebook.com/share/1JHgTvEB2t/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('is-open');
+    });
+  </script>
+</body>
+</html>
