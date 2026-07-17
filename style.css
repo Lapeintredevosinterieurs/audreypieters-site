@@ -455,7 +455,7 @@ h3 {
 }
 
 
-/* Corrections page À propos */
+/* Page À propos */
 .page-hero {
   padding: 94px 0 70px;
   background: var(--stone);
@@ -482,24 +482,20 @@ h3 {
   margin: 0 0 22px;
 }
 
-.video-frame {
+.video-wrapper {
   margin: 44px 0;
-  background: #151719;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
+  background: #202426;
+  aspect-ratio: 16 / 9;
 }
 
-.video-frame video {
+.video-wrapper iframe {
   display: block;
   width: 100%;
-  max-height: 680px;
-  background: #151719;
-}
-
-.trust-heading {
-  font-size: clamp(2.2rem, 4.2vw, 3.35rem);
-  white-space: nowrap;
+  height: 100%;
+  border: 0;
 }
 
 .client-qualities {
@@ -531,20 +527,29 @@ h3 {
 }
 
 .inner-recognition .network-logo {
-  height: 125px;
   width: auto;
   max-width: 220px;
+  height: 120px;
   object-fit: contain;
   background: white;
   padding: 14px;
-  margin: 24px auto 26px;
+  margin: 28px auto 30px;
 }
 
 @media (max-width: 900px) {
   .inner-recognition {
     grid-template-columns: 1fr;
   }
+}
 
+
+/* Ajustements ciblés page À propos */
+.trust-heading {
+  font-size: clamp(2.25rem, 3.5vw, 3.35rem);
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
   .trust-heading {
     white-space: normal;
   }
