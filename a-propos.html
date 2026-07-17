@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Découvrez le parcours d'Audrey Pieters, peintre en bâtiment et peintre décoratrice installée à Nogent-sur-Marne.">
+  <title>À propos | Audrey Pieters</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Accueil Audrey Pieters">
+      <img src="assets/logo.png" alt="Logo Audrey Pieters">
+    </a>
+
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="a-propos.html" aria-current="page">À propos</a>
+      <a href="prestations.html">Prestations</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="faq.html">FAQ</a>
+      <a class="nav-cta" href="contact.html">Demander un devis</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="kicker">Mon parcours</p>
+        <h1>À propos</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container prose">
+        <p>Issue du monde juridique, c'est par passion pour les activités artistiques et manuelles que j'ai choisi de me reconvertir dans le domaine de la peinture en 2013. Ayant toujours eu l'envie d'exercer un métier concret, où l'on crée avec ses mains et où l'on peut voir le résultat de son travail prendre forme sous ses yeux, j'ai trouvé, à un moment de ma vie, le courage de franchir le pas et de suivre mes aspirations.</p>
+
+        <p>Aujourd'hui, j'exerce ce métier avec la même motivation qu'à mes débuts : transformer les lieux pour qu'ils retrouvent leur éclat, leur harmonie et leur personnalité.</p>
+
+        <p>Ce que j'aime le plus dans mon travail, c'est voir un intérieur reprendre vie. Une pièce sombre qui s'éclaire, un logement fatigué qui retrouve du caractère, un client qui redécouvre son propre intérieur avec plaisir.</p>
+
+        <div class="video-placeholder">
+          <h2>Vidéo de présentation</h2>
+          <p>La vidéo sera intégrée dans une prochaine mise à jour.</p>
+        </div>
+
+        <p>Installée à Nogent-sur-Marne, j'interviens principalement dans l'Est parisien et à Paris auprès des particuliers et des professionnels.</p>
+
+        <p>Je travaille principalement seule, ce qui me permet d'assurer un suivi personnalisé. Pour les projets plus importants, je peux également m'appuyer sur un réseau de professionnels de confiance avec lesquels j'ai l'habitude de collaborer.</p>
+
+        <p>J'interviens aussi bien dans des appartements anciens que dans des intérieurs contemporains. Chaque projet est différent, et c'est précisément ce qui me plaît dans ce métier.</p>
+
+        <p>J'accorde une grande importance à la relation de confiance qui se construit tout au long d'un chantier. Écoute, conseils et communication font partie intégrante de ma façon de travailler, au même titre que la qualité des finitions.</p>
+      </div>
+    </section>
+
+    <section class="section section-stone">
+      <div class="container">
+        <div class="section-heading">
+          <p class="kicker">Ce que disent souvent mes clients</p>
+          <h2>Une relation fondée sur la confiance</h2>
+        </div>
+
+        <p class="client-qualities">Professionnelle, fiable, à l'écoute, de bon conseil et minutieuse.</p>
+
+        <div class="prose">
+          <p>Ce sont les qualités qui reviennent le plus souvent dans les avis laissés par mes clients et dans les recommandations qui me sont adressées.</p>
+          <p>Et c'est probablement la plus belle récompense de mon métier.</p>
+        </div>
+
+        <div class="inner-recognition">
+          <article>
+            <img src="assets/prix-cma.jpeg" alt="Remise du Prix Artisanat au Féminin 2022">
+            <h2>Prix Artisanat au Féminin Paris Est, Marne et Bois 2022</h2>
+          </article>
+          <article>
+            <img class="network-logo" src="assets/batifemmes.jpg" alt="Logo Batifemmes">
+            <h2>Membre du réseau Batifemmes</h2>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-cta">
+      <div class="container compact">
+        <p class="kicker">Votre projet</p>
+        <h2>Parlons de votre intérieur</h2>
+        <p>Je me déplace pour étudier votre projet, vous conseiller et établir un devis personnalisé.</p>
+        <a class="button" href="contact.html">Demander un devis</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="https://www.instagram.com/audreypieterspeintre?utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.facebook.com/share/1JHgTvEB2t/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('is-open');
+    });
+  </script>
+</body>
+</html>
