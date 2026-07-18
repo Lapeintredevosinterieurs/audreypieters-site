@@ -207,6 +207,11 @@ h3 {
 
 .section-heading h2 { margin-bottom: 0; }
 
+.trust-heading{
+  max-width:none;
+  white-space:nowrap;
+}
+
 .three-columns {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
