@@ -140,6 +140,15 @@ a { color: inherit; }
   font-weight: 700;
 }
 
+/* Ajustement uniquement de la page d'accueil */
+.hero .eyebrow{
+  font-size:1.55rem;
+}
+
+.hero h1{
+  font-size:clamp(2.25rem,5.3vw,4.25rem);
+}
+
 .profession {
   margin: 0 0 10px;
   font-weight: 600;
