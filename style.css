@@ -134,7 +134,7 @@ a { color: inherit; }
 .eyebrow,
 .kicker {
   margin: 0 0 8px;
-  font-size: 0.95rem;
+  font-size: 1.22rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   font-weight: 700;
@@ -154,7 +154,7 @@ h1, h2, h3 {
 h1 {
   max-width: 760px;
   margin-bottom: 24px;
-  font-size: clamp(3.1rem, 7.2vw, 5.9rem);
+  font-size: clamp(2.65rem, 6.2vw, 5rem);
   font-weight: 600;
 }
 
