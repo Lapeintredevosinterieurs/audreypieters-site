@@ -475,29 +475,25 @@ h3 {
 }
 
 .prose {
-  max-width: 900px;
+  max-width: 820px;
 }
 
 .prose p {
   margin: 0 0 22px;
 }
 
-.video-placeholder {
-  margin: 44px 0;
-  padding: 46px 28px;
-  text-align: center;
-  background: #202426;
-  color: white;
-  border-radius: var(--radius);
+/* Présentation du portrait vidéo */
+.page-hero + .section .prose {
+  max-width: 900px;
 }
 
 .video-link-card {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.22fr);
+  grid-template-columns: minmax(0, 376px) minmax(0, 1fr);
   gap: 32px;
   align-items: center;
   margin: 44px 0 68px;
-  padding: 18px;
+  padding: 32px 18px;
   background: #202426;
   color: white;
   border-radius: var(--radius);
@@ -515,27 +511,28 @@ h3 {
   object-fit: cover;
 }
 
-.video-link-content {
-  padding: 10px 22px 10px 0;
+.video-link-content .kicker {
+  color: white;
 }
 
 .video-link-content h2 {
   margin-bottom: 12px;
-  font-size: clamp(2.6rem, 4vw, 3.55rem);
+  font-size: clamp(2.7rem, 4.2vw, 3.35rem);
 }
 
 .video-link-content > p:not(.kicker) {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
 .video-button {
-  margin-top: 14px;
+  margin-top: 8px;
   background: white;
   color: var(--blue);
 }
 
 .video-button:hover {
   background: var(--paper);
+  color: var(--blue-dark);
 }
 
 .client-qualities {
@@ -567,20 +564,23 @@ h3 {
 }
 
 .inner-recognition .network-logo {
+  width: 220px;
+  height: 120px;
+  margin: 28px auto 36px;
   object-fit: contain;
   background: white;
-  padding: 22px;
+  padding: 12px;
 }
 
 @media (max-width: 900px) {
   .video-link-card {
     grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 20px;
+    gap: 26px;
+    padding: 24px;
   }
 
-  .video-link-content {
-    padding: 0 4px 6px;
+  .video-thumbnail {
+    max-width: 620px;
   }
 
   .inner-recognition {
@@ -590,12 +590,16 @@ h3 {
 
 @media (max-width: 640px) {
   .video-link-card {
-    margin-bottom: 52px;
-    padding: 14px;
+    margin: 34px 0 50px;
+    padding: 18px;
   }
 
   .video-link-content h2 {
-    font-size: clamp(2.35rem, 12vw, 3rem);
+    font-size: 2.45rem;
+  }
+
+  .inner-recognition .network-logo {
+    width: min(220px, 100%);
   }
 }
 
