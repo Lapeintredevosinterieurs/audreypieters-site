@@ -673,6 +673,11 @@ h3 {
   aspect-ratio: 4 / 3;
 }
 
+.gallery.portfolio-gallery figcaption,
+.before-after figcaption {
+  display: none;
+}
+
 .before-after {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
